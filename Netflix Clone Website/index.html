@@ -1,119 +1,197 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1ffa63a2cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix India</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  </head>
+  <body>
+    
+    <!-- header section -->
+    <section class="main">
+      <!-- header section -->
+      <header>
+        <nav>
+          <img
+            class="logo"
+            src="https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460"
+            alt="Netflix"
+          />
+          <div>
+            <select>
+              <option>English</option>
+              <option>Tamil</option>
+              <option>Malayalam</option>
+              <option>Kannada</option>
+              <option>Hindi</option>
+            </select>
+            <button class="nav-sign-in-btn">Sign in</button>
+          </div>
+        </nav>
+      </header>
 
-<body>
-    <!-- HEADER -->
-    <div class="wrapper">
-        <header>
-            <div class="netflixLogo">
-                <a id="logo" href="#home"><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Logo Image" /></a>
-            </div>
-            <nav class="main-nav">
-                <a href="#home">Home</a>
-                <a href="#tvShows">TV Shows</a>
-                <a href="#movies">Movies</a>
-                <a href="#originals">Originals</a>
-                <a href="#">Recently Added</a>
-            </nav>
-            <nav class="sub-nav">
-                <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
-                <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-                <a href="#">Account</a>
-            </nav>
-        </header>
-    </div>
-    <!-- END OF HEADER -->
-    <!-- DISPLAY -->
-    <div class="home-container" style="background-image: url('https://assets.ccbp.in/frontend/react-js/movies-app/avatar-theatrical-movie-background-v0.png'); background-size: cover; height: 52vh; background-repeat: no-repeat;">
-        <div class="home-movie-details-container">
-            <h1 class="home-movie-heading">Avatar</h1>
-            <p class="home-movie-description">Avatar is a 2009 American epic science fiction film directed, written, produced, and co-edited by James Cameron</p>
-            <button type="button" class="home-movie-play-button">
-                Play
-            </button>
+      <!-- hero section -->
+      <section class="box">
+        <div class="hero">
+          <h1>Unlimited movies, TV shows and more</h1>
+          <p>Watch anywhere. Cancel anytime</p>
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div class="input-container">
+            <input class="input" placeholder="Email address" type="text" />
+            <button class="get-start-btn">Get Started &gt;</button>
+          </div>
         </div>
-    </div>
-
-    <!-- END OF DISPLAY -->
-    <!-- MAIN CONTAINER -->
-    <section class="main-container">
-        <div class="location" id="home">
-            <h1 id="home">Popular on Movies App</h1>
-            <div class="box">
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/no-time-to-die-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/shang-chi-and-the-legend-of-the-ten-rings-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/dune-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-suicide-squad-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/venom-let-there-be-carnage-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/eternals-movie-poster.png" alt="" /></a>
-
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/army-of-thieves-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-harder-they-fall-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/halloween-kills-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/twilight-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/squid-game-south-korean-movie-poster.png" alt="" /></a>
-                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-pursuit-of-happyness-movie-poster.png" alt="" /></a>
-            </div>
-        </div>
-
-        <h1 id="myList">Trending Now</h1>
-        <div class="box">
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/grindhouse-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/clifford-the-big-red-dog-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/titanic-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/avatar-theatrical-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/a-few-good-men-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/king-richard-movie-poster.png" alt="" /></a>
-        </div>
-
-        <h1 id="tvShows">TV Shows</h1>
-        <div class="box">
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/dexter-new-blood-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/riverdale-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-boss-baby-family-business-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-protege-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/godzilla-vs-kong-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/demonic-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/cosmic-sin-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/infinite-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/zack-snyders-justice-league-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-tomorrow-war-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-vault-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/mortal-kombat-international-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/spider-man-advance-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/gunpowder-milkshake-british-movie-poster.png" alt="" /></a>
-        </div>
-
-        <h1 id="originals">Originals</h1>
-        <div class="box">
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/spider-man-far-from-home-international-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/venom-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/snake-eyes-gi-joe-origins-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-addams-family-2-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/luca-movie-poster.png" alt="" /></a>
-            <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-amazing-spider-man-movie-poster.png" alt="" /></a>
-        </div>
+      </section>
     </section>
-    <!-- FOOTER -->
-    <footer>
-        <div class="logos">
-            <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+    <hr />
+
+    <!-- section 1 -->
+    <section class="first">
+      <div class="text-container">
+        <h1>Enjoy on your TV</h1>
+        <p>
+          Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+          players and more.
+        </p>
+      </div>
+      <div class="sec-img">
+        <img
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+          alt
+        />
+        <video
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+          autoplay="loop"
+          muted
+        ></video>
+      </div>
+    </section>
+    <hr />
+
+    <!-- section 2 -->
+    <section class="second">
+      <div class="sec-img order-2">
+        <img
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+          alt="stranger things"
+        />
+        <div class="second-bottom">
+          <div class="second-bottom-img-container">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+              alt="strange things pic"
+            />
+            <div class="second-text-container">
+              <h4>Stranger Things</h4>
+              <p>Downloading...</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-down-long fa-bounce"></i>
         </div>
-        <p>Contact US</p>
-        <p>Help center</p>
+      </div>
+      <div class="text-container order-1">
+        <h1>Download your shows to watch offline</h1>
+        <p>Save your favourites easily and always have something to watch.</p>
+      </div>
+    </section>
+    <hr />
+    
+    <!-- section 3 -->
+    <section class="third">
+      <div class="text-container">
+        <h1>Watch everywhere</h1>
+        <p>
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </p>
+      </div>
+      <div class="sec-img">
+        <img
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <hr/>
+
+    <!-- section 4 -->
+    <section class="fourth">
+      <div class="sec-img order-2">
+        <img
+              src="https://occ-0-6335-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+              alt="">
+      </div>
+      <div class="text-container order-1">
+          <h1>Create profiles for kids</h1>
+          <p>Send children on adventures with their favourite characters in a space made just for them—free with
+              your membership.</p>
+      </div>
+
+   </section>
+   <hr/>
+
+   <!-- Questions section -->
+    <section class="question-section">
+       <h1 class="question-head">Frequently Asked Questions</h1>
+       <ul class="questions-container">
+         <li>What is Netflix <i class="fa-solid fa-plus"></i></li>
+         <li>How much does Netflix cost? <i class="fa-solid fa-plus"></i></li></li>
+         <li>Where can I watch? <i class="fa-solid fa-plus"></i></li></li>
+         <li>How do I cancel? <i class="fa-solid fa-plus"></i></li></li>
+         <li>What can I watch on Netflix? <i class="fa-solid fa-plus"></i></li></li>
+         <li>Is Netflix good for kids? <i class="fa-solid fa-plus"></i></li></li>
+       </ul>
+       <p class="ready-text">Ready to watch? Enter your email to create or restart your membership.</p>
+       <div class="input-container">
+        <input class="input" placeholder="Email address" type="text" />
+        <button class="get-start-btn">Get Started &gt;</button>
+      </div>
+    </section>
+    <hr/>
+  
+   <!-- Footer -->
+    <footer>
+       <p>Questions? Call <a href="#">000-800-919-1694</a></p>
+       <ul class="footer-list">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Media Centre</a></li>
+       </ul>
+       <ul class="footer-list">
+        <li><a href="#">Invertor Relations</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Ways to Watch</a></li>
+        <li><a href="#">Terms of Use</a></li>
+     </ul>
+     <ul class="footer-list">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Cookie Preferences</a></li>
+      <li><a href="#">Corporate Information</a></li>
+      <li><a href="#">Contact Us</a></li>
+   </ul>
+   <ul class="footer-list">
+    <li><a href="#">Speed Test</a></li>
+    <li><a href="#">Legal Notices</a></li>
+    <li><a href="#">Only on Netflix</a></li>
+ </ul>
+ <select class="select">
+  <option>English</option>
+  <option>Tamil</option>
+  <option>Malayalam</option>
+  <option>Kannada</option>
+  <option>Hindi</option>
+</select>
+<p class="netflix">Netflix India</p>
     </footer>
-</body>
+    
+  </body>
 </html>
